@@ -1,17 +1,7 @@
-<header role="banner">
-  <nav id="links" role="navigation">
-    <ul class="links">
-      <li class="link brand">
-        <a href="/">
-          <strong>{{ site.title }}</strong>
-        </a>
-      </li>
-
-      {% for link in site.links %}
-        <li class="link">
-          <a href="{{ link.url }}">{{ link.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+<header role="banner" class="ui container">
+  <nav class="ui twelve item fixed top links menu" role="navigation">
+    {% for link in site.links %}
+      <a class="link {{ link.css }} item" href="{{ link.url }}">{{ link.name }}</a>
+    {% endfor %}
   </nav>
 </header>

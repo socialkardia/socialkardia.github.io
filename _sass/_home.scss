@@ -1,8 +1,0 @@
-#posts {
-  @include outer-container;
-  @include pad();
-
-  .heading {
-    font-size: 1.8em;
-  }
-}

@@ -1,5 +1,5 @@
 # Site settings
-title: "Blog Title"
+title: "Site"
 description: "The blog description."
 owner: "Kurtis Rainbolt-Greene"
 github: "http://github.com/organization/blankjekyll.github.io"
@@ -10,6 +10,13 @@ profiles:
     name: "Twitter"
     url: "http://twitter.com/krainboltgreene"
 links:
+  -
+    name: "Contact"
+    url: "/contact"
+  -
+    name: "Site"
+    url: "/"
+    css: "brand header"
   -
     name: "About"
     url: "/about"
@@ -25,5 +32,3 @@ exclude:
   - .ruby-gemset
   - .ruby-version
   - .gitignore
-  - _mdwriter.cson
-  - _sass

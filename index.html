@@ -1,41 +1,34 @@
 ---
 layout: "page"
 title: "Home"
+id: "homepage"
 ---
-
-<section id="posts">
+<section class="ui basic segment">
   <h1 class="heading">
     Posts
   </h1>
 
-  <ul class="posts">
+  <ul class="posts ui items">
     {% for post in site.posts %}
-      <li class="post" data-title="{{ post.title }}" data-authors="{{ post.authors | map: 'name' | join: ', ' }}" data-timestamp="{{ post.date }}">
-        <picture class="image">
-          <icon class="fa fa-example">
-        </picture>
-
+      <li class="post item" data-title="{{ post.title }}" data-authors="{{ post.authors | map: 'name' | join: ', ' }}" data-timestamp="{{ post.date }}">
         <article class="content">
-          <header>
+          <header class="header">
             <h2 class="title">
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
-
-            <p class="authors">
-              Written by
-              {% for author in post.authors %}<a href="mailto:{{ author.email }}">{{ author.name }}</a>{% endfor %}.
-            </p>
-
-            <p class="timestamp">
-              <small><em>last updated <time>{{ post.date | date: "%Y/%m/%d" }}</time></em></small>
-            </p>
           </header>
 
-          <section class="blurb">
-            <p>
-              {{ post.blurb }}
-            </p>
-          </section>
+          <p class="summary">
+            {{ post.summary }}
+          </p>
+
+          <p class="extra authors">
+            <small>Written by {% for author in post.authors %}<a href="mailto:{{ author.email }}">{{ author.name }}</a>{% endfor %}.</small>
+          </p>
+
+          <p class="extra timestamp">
+            <small><em>last updated <time>{{ post.date | date: "%Y/%m/%d" }}</time></em></small>
+          </p>
         </article>
       </li>
     {% endfor %}
