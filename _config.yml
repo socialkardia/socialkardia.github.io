@@ -2,9 +2,9 @@
 title: "Socialkardia"
 description: "Digital social awareness tools."
 owner: "Kurtis Rainbolt-Greene"
-analytics: UA-18715035-10
 github: "http://github.com/socialkardia/socialkardia.github.io"
 logo: "http://github.com/socialkardia.png"
+analytics: UA-18715035-11
 profiles:
   -
     name: "Twitter"
@@ -14,6 +14,12 @@ profiles:
     url: "http://github.com/socialkardia"
 links:
   -
+    name: "About"
+    url: "/about"
+  -
+    name: "Policy"
+    url: "/Policy"
+  -
     name: "Contact"
     url: "/contact"
   -
@@ -21,8 +27,14 @@ links:
     url: "/"
     css: "brand header"
   -
-    name: "About"
-    url: "/about"
+    name: "Radar"
+    url: "/radar"
+  -
+    name: "Monitor"
+    url: "/monitor"
+  -
+    name: "API"
+    url: "/api"
 
 # Build settings
 markdown: redcarpet
