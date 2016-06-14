@@ -1,0 +1,15 @@
+:root {
+  --text-color: #FFFFFF;
+  --primary-color: #E91E63;
+  --dark-primary-color: #C2185B;
+  --light-primary-color: #F8BBD0;
+  --accent-color: #B6B6B6;
+}
+
+body {
+  font-size: 18px;
+}
+
+main {
+  min-height: 600px;
+}

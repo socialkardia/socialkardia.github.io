@@ -1,73 +1,126 @@
----
-layout: "page"
-title: "Home"
-id: "homepage"
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SocialKardia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A set of utilities for dealing with social toxicity.">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/assets/syntax.css" rel="stylesheet">
+    <link href="/assets/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <ul class="links">
+          <li>
+            <a class="link" href="/">SocialKardia</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="opener">
+        <h2>Your community has a heart</h2>
+        <p>
+          Every community has leaders, supporters, and hard workers. Sometimes a community has members that don't contribute helpfully, or worse are trying to damage what's being done.
+        </p>
 
+        <h2>Make sure that heart is healthy</h2>
 
+        <p>
+          Socialkardia is a set of digital social network awareness tools. Socialkardia gives you a chance to know how your community is hurting. Socialkardia gives you insight into people involved in your social network, from Twitter to Reddit. Socialkardia is the heart monitor for your community.
+        </p>
+      </section>
 
-<section id="opener">
-  <h2>Your community has a heart</h2>
-  <p>
-    Every community has leaders, supporters, and hard workers. Sometimes a
-    community has members that don't contribute helpfully, or worse are trying
-    to damage what's being done.
-  </p>
+      <section id="tools">
+        <ul>
+          <li>
+            <h3>Radar</h3>
 
-  <h2>Make sure that heart is healthy</h2>
+            <p>
+              The Radar tool is a passive analysis of twitter, reddit, &amp; youtube users. It can answer the following questions about someone:
+            </p>
 
-  <p>
-    Socialkardia is a set of digital social network awareness tools. Socialkardia
-    gives you a chance to know how your community is hurting. Socialkardia gives
-    you insight into people involved in your social network, from Twitter to
-    Reddit. Socialkardia is the heart monitor for your community.
-  </p>
-</section>
+            <ul>
+              <li> Does this person interact with toxic people? </li>
+              <li> How toxic is this person? </li>
+              <li> Has this person changed over time? </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Monitor</h3>
 
-<section id="tools">
-  <ul>
-    <li>
-      <h3>Radar</h3>
+            <p>
+              Monitor is a passive toxicity detection system for group discussion. It can be used as an alert system or simply as a histographic tool for these types of situations:
+            </p>
 
-      <p>
-        The Radar tool is a passive analysis of twitter, reddit, &amp; youtube
-        users. It can answer the following questions about someone:
-      </p>
+            <ul>
+              <li> Someone is being extra toxic. </li>
+              <li> The discussion tempature is rising. </li>
+              <li> Someone is continually being a toxic community member. </li>
+            </ul>
+          </li>
+          <li>
+            <h3>API</h3>
 
-      <ul>
-        <li> Does this person interact with toxic people? </li>
-        <li> How toxic is this person? </li>
-        <li> Has this person changed over time? </li>
-      </ul>
-    </li>
-    <li>
-      <h3>Monitor</h3>
+            <p>
+              For the programmers this provides a stable set of endpoints for programs to query for toxicity information. You can:
+            </p>
 
-      <p>
-        Monitor is a passive toxicity detection system for group discussion. It
-        can be used as an alert system or simply as a histographic tool for
-        these types of situations:
-      </p>
+            <ul>
+              <li> Determine the toxicity of a piece of text. </li>
+              <li> Store information about a particular user. </li>
+              <li> Query information about the history of someone. </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer role="contentinfo">
+      <section>
+        <h1>
+          Navigation
+        </h1>
 
-      <ul>
-        <li> Someone is being extra toxic. </li>
-        <li> The discussion tempature is rising. </li>
-        <li> Someone is continually being a toxic community member. </li>
-      </ul>
-    </li>
-    <li>
-      <h3>API</h3>
+        <ul class="links">
+          <li class="link">
+            <a href="/about">
+              About
+            </a>
+          </li>
+        </ul>
+      </section>
 
-      <p>
-        For the programmers this provides a stable set of endpoints for programs
-        to query for toxicity information. You can:
-      </p>
+      <section>
+        <h1>
+          Social
+        </h1>
 
-      <ul>
-        <li> Determine the toxicity of a piece of text. </li>
-        <li> Store information about a particular user. </li>
-        <li> Query information about the history of someone. </li>
-      </ul>
-    </li>
-  </ul>
-</section>
+        <ul class="links">
+          <li class="link">
+            <a rel="profile" href="https://twitter.com/socialkardia">
+              @socialkardia
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="legal">
+        <h1 class="header">
+          Legal
+        </h1>
+
+        <p id="disclaimer">
+          Cookie topping cookie gummi bears jelly caramels bonbon chocolate bar muffin. Cake pastry cake lemon drops liquorice sweet roll carrot cake cheesecake.
+        </p>
+
+        <p id="copyright">
+          SocialKardia by <a rel="author" href="https://www.kurtisrainboltgreene.name" >Kurtis Rainbolt-Greene</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Based on a work at <a rel="source" href="https://www.github.com/socialkardia">https://www.github.com/socialkardia</a>.
+        </p>
+      </section>
+
+      <img id="logo" src="/assets/logo.png" alt="The socialkardia heartbeat logo">
+    </footer>
+  </body>
+</html>
